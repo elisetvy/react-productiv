@@ -38,7 +38,7 @@ function EditableTodo({ todo, update, remove}) {
 
                 {isEditing &&
 
-                <TodoForm initialFormData={todo}/>
+                <TodoForm initialFormData={todo} handleSave={handleSave} />
                 }
 
                 {!isEditing &&
