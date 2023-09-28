@@ -9,9 +9,6 @@ import React from "react";
  **/
 
 function Todo({ id, title, description, priority } ) {
-  console.log("TODO TITLE IS: ", title);
-  const testTitle = title;
-  console.log(testTitle);
   return (
       <div className="Todo" id={id}>
         {/* <p>{testTitle}</p> */}
