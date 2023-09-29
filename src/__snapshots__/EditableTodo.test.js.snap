@@ -1,26 +1,48 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Top todo component passes snapshot 1`] = `
+exports[`Editable todo component passes snapshot 1`] = `
 <div>
   <div
-    class="Todo"
-    id="2"
+    class="EditableTodo"
   >
-    <div>
-      <b>
-        Make dinner
-      </b>
-       
-      <small>
-        (priority: 
-        1
-        )
-      </small>
-    </div>
-    <div>
-      <small>
-        Cook something healthy
-      </small>
+    <div
+      class="mb-3"
+    >
+      <div
+        class="float-end text-sm-end"
+      >
+        <button
+          class="EditableTodo-toggle btn-link btn btn-sm"
+        >
+          Edit
+        </button>
+        <button
+          class="EditableTodo-delBtn btn-link btn btn-sm text-danger"
+        >
+          Del
+        </button>
+      </div>
+      <div
+        class="Todo"
+        id="1"
+      >
+        <div>
+          <b>
+            Code!
+          </b>
+           
+          <small>
+            (priority: 
+            2
+            )
+          </small>
+        </div>
+        <div>
+          <small>
+            Write some code
+          </small>
+        </div>
+      </div>
     </div>
   </div>
 </div>

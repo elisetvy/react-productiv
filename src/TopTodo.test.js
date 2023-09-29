@@ -28,7 +28,7 @@ describe("Top todo component", function (){
     render(<TopTodo todos={initialTodos} />);
   });
 
-  test("contains expected title", function () {
+  test("contains expected todo", function () {
     const result = render(<TopTodo todos={initialTodos} />);
     expect(result.queryByText("Cook something healthy")).toBeInTheDocument();
   });

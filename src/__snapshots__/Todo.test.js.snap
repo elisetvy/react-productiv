@@ -8,18 +8,18 @@ exports[`Todo component passes snapshot 1`] = `
   >
     <div>
       <b>
-        test
+        Code!
       </b>
        
       <small>
         (priority: 
-        1
+        2
         )
       </small>
     </div>
     <div>
       <small>
-        moretest
+        Write some code
       </small>
     </div>
   </div>
