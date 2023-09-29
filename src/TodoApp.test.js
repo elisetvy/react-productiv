@@ -80,4 +80,9 @@ describe("TodoApp component", function() {
     expect(allTodos.length).toBe(0);
     expect(result.queryByText("Make dinner")).not.toBeInTheDocument();
   });
+
+  test("passes snapshot", function (){
+    const { container } = render(<TodoApp initialTodos={initialTodos}/>);
+    expect(container).toMatchSnapshot();
+  });
 });
