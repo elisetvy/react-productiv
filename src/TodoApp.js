@@ -26,6 +26,7 @@ function TodoApp({ initialTodos }) {
   function create(newTodo) {
     const todo = {...newTodo, id: uuid()};
     return todo;
+    //TODO: pass into form
   }
 
   /** update a todo with updatedTodo */
@@ -49,7 +50,7 @@ function TodoApp({ initialTodos }) {
   return (
       <main className="TodoApp">
         <div className="row">
-
+          {/* TODO: ternary */}
           <div className="col-md-6">
             {todos.length !== 0 && <EditableTodoList
               todos={todos}

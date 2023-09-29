@@ -65,7 +65,8 @@ function TodoForm({ initialFormData, handleSave }) {
             <select id="newTodo-priority"
                     name="priority"
                     value={formData.priority}
-                    onChange={handleChange}
+//TODO: make this
+                    onChange={numericChange}
                     className="form-control form-control-sm d-inline-flex"
             >
               <option value={1}>Ultra-Über</option>
