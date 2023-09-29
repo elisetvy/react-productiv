@@ -1,8 +1,10 @@
 import React from "react";
 import TodoApp from "./TodoApp";
 import Footer from "./Footer";
+import QuoteGetter from "./QuoteGetter";
 import "bootstrap/dist/css/bootstrap.css";
 import "./App.css";
+import Quote from "./Quote";
 
 /** Site application.
  *
@@ -16,6 +18,7 @@ function App() {
           <div className="container">
             <h1>Prøductïv</h1>
             <p className="lead">The best name in todo list management.</p>
+            <QuoteGetter />
           </div>
         </header>
 
