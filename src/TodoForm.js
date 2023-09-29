@@ -23,6 +23,15 @@ function TodoForm({ initialFormData, handleSave }) {
     }));
   }
 
+  /**Update form input for numeric fields */
+  function handleNumericChange(evt) {
+    const { name, value } = evt.target;
+    setFormData(fData => ({
+      ...fData,
+      [name]: Number(value),
+    }));
+  }
+
   /** Call parent function and clear form. */
   function handleSubmit(evt) {
     evt.preventDefault();
@@ -65,8 +74,7 @@ function TodoForm({ initialFormData, handleSave }) {
             <select id="newTodo-priority"
                     name="priority"
                     value={formData.priority}
-//TODO: make this
-                    onChange={numericChange}
+                    onChange={handleNumericChange}
                     className="form-control form-control-sm d-inline-flex"
             >
               <option value={1}>Ultra-Über</option>
