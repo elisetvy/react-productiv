@@ -1,137 +1,73 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Editable todo list component passes snapshot 1`] = `
+exports[`Todo form component passes snapshot 1`] = `
 <div>
-  <div>
+  <form
+    class="NewTodoForm"
+  >
     <div
-      class="EditableTodo"
+      class="mb-3"
     >
-      <div
-        class="mb-3"
-      >
-        <div
-          class="float-end text-sm-end"
-        >
-          <button
-            class="EditableTodo-toggle btn-link btn btn-sm"
-          >
-            Edit
-          </button>
-          <button
-            class="EditableTodo-delBtn btn-link btn btn-sm text-danger"
-          >
-            Del
-          </button>
-        </div>
-        <div
-          class="Todo"
-          id="1"
-        >
-          <div>
-            <b>
-              Code!
-            </b>
-             
-            <small>
-              (priority: 
-              2
-              )
-            </small>
-          </div>
-          <div>
-            <small>
-              Write some code
-            </small>
-          </div>
-        </div>
-      </div>
+      <input
+        aria-label="Title"
+        class="form-control"
+        id="newTodo-title"
+        name="title"
+        placeholder="Title"
+        value=""
+      />
     </div>
     <div
-      class="EditableTodo"
+      class="mb-3"
     >
-      <div
-        class="mb-3"
-      >
-        <div
-          class="float-end text-sm-end"
-        >
-          <button
-            class="EditableTodo-toggle btn-link btn btn-sm"
-          >
-            Edit
-          </button>
-          <button
-            class="EditableTodo-delBtn btn-link btn btn-sm text-danger"
-          >
-            Del
-          </button>
-        </div>
-        <div
-          class="Todo"
-          id="2"
-        >
-          <div>
-            <b>
-              Make dinner
-            </b>
-             
-            <small>
-              (priority: 
-              1
-              )
-            </small>
-          </div>
-          <div>
-            <small>
-              Cook something healthy
-            </small>
-          </div>
-        </div>
-      </div>
+      <textarea
+        aria-label="Description"
+        class="form-control"
+        id="newTodo-description"
+        name="description"
+        placeholder="Description"
+      />
     </div>
     <div
-      class="EditableTodo"
+      class="mb-3 d-flex justify-content-between"
     >
       <div
-        class="mb-3"
+        class="w-75 d-flex justify-content-between"
       >
-        <div
-          class="float-end text-sm-end"
+        <label
+          class="d-inline-flex"
+          for="newTodo-priority"
         >
-          <button
-            class="EditableTodo-toggle btn-link btn btn-sm"
-          >
-            Edit
-          </button>
-          <button
-            class="EditableTodo-delBtn btn-link btn btn-sm text-danger"
-          >
-            Del
-          </button>
-        </div>
-        <div
-          class="Todo"
-          id="3"
+          Priority:  
+        </label>
+        <select
+          class="form-control form-control-sm d-inline-flex"
+          id="newTodo-priority"
+          name="priority"
         >
-          <div>
-            <b>
-              Go to bed
-            </b>
-             
-            <small>
-              (priority: 
-              3
-              )
-            </small>
-          </div>
-          <div>
-            <small>
-              In bed by 11:15
-            </small>
-          </div>
-        </div>
+          <option
+            value="1"
+          >
+            Ultra-Über
+          </option>
+          <option
+            value="2"
+          >
+            Über
+          </option>
+          <option
+            value="3"
+          >
+            Meh
+          </option>
+        </select>
       </div>
+      <button
+        class="btn-primary rig btn btn-sm NewTodoForm-addBtn"
+      >
+        Gø!
+      </button>
     </div>
-  </div>
+  </form>
 </div>
 `;
