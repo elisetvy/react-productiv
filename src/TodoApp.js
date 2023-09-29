@@ -25,8 +25,7 @@ function TodoApp({ initialTodos }) {
   /** add a new todo to list */
   function create(newTodo) {
     const todo = {...newTodo, id: uuid()};
-    return todo;
-    //TODO: pass into form
+    setTodos([...todos, todo]);
   }
 
   /** update a todo with updatedTodo */
@@ -42,22 +41,22 @@ function TodoApp({ initialTodos }) {
   }
 
   /** adds new todo to state */
-  function handleSave(formData){
-    const todo = create(formData);
-    setTodos([...todos, todo]);
-  }
+  // function handleSave(formData){
+  //   const todo = create(formData);
+  //   setTodos([...todos, todo]);
+  // }
 
   return (
       <main className="TodoApp">
         <div className="row">
-          {/* TODO: ternary */}
           <div className="col-md-6">
-            {todos.length !== 0 && <EditableTodoList
+            {todos.length !== 0 ?
+             <EditableTodoList
               todos={todos}
               update={update}
               remove={remove}
-            />}
-            {todos.length === 0 &&
+            />
+            :
             <span className="text-muted">You have no todos.</span>}
           </div>
 
@@ -73,7 +72,7 @@ function TodoApp({ initialTodos }) {
               <h3 className="mb-3">Add Nü</h3>
               <TodoForm
                 initialFormData={BLANK_FORM_DATA}
-                handleSave={handleSave}
+                handleSave={create}
               />
             </section>
           </div>
