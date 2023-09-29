@@ -20,10 +20,6 @@ describe("Todo component", function (){
                                       title="test"
                                       priority={1}
                                       description="moretest"/>);
-
     expect(container).toMatchSnapshot();
   });
-
-
-
 });

@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Top todo component passes snapshot 1`] = `
+<div>
+  <div
+    class="Todo"
+    id="2"
+  >
+    <div>
+      <b>
+        Make dinner
+      </b>
+       
+      <small>
+        (priority: 
+        1
+        )
+      </small>
+    </div>
+    <div>
+      <small>
+        Cook something healthy
+      </small>
+    </div>
+  </div>
+</div>
+`;

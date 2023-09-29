@@ -53,12 +53,7 @@ function EditableTodo({ todo, update, remove}) {
                       Del
                     </button>
                   </div>
-                  <Todo
-                    id={todo.id}
-                    title={todo.title}
-                    description={todo.description}
-                    priority={todo.priority}
-                  />
+                  <Todo todo={todo} />
                 </div>
                 }
 
